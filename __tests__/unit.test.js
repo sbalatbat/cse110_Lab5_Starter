@@ -65,3 +65,15 @@ test('January 5, 2016 is not a valid date', () => {
 });
 
 /* isHexColor tests */
+test('#eFaE59 is a valid hex color', () => {
+  expect(isHexColor('#eFaE59')).toBe(true);
+});
+test('03c is a valid hex color', () => {
+  expect(isHexColor('03c')).toBe(true);
+});
+test('0xABC123 is not a valid hex color', () => {
+  expect(isHexColor('0xABC123')).toBe(false);
+});
+test('0X5Y8Z is not a valid hex color', () => {
+  expect(isHexColor('0X5Y8Z')).toBe(false);
+});

@@ -23,6 +23,18 @@ test('555 678 0925 is not a phone number', () => {
 });
 
 /* isEmail tests */
+test('merp@ucsd.edu is a valid email', () => {
+  expect(isEmail('merp@ucsd.edu')).toBe(true);
+});
+test('john_Clock@zeroMaidens.co is a valid email', () => {
+  expect(isEmail('john_Clock@zeroMaidens.co')).toBe(true);
+});
+test('+werklyhordin@gmail.com is not a valid email', () => {
+  expect(isEmail('+werklyhordin@gmail.com')).toBe(false);
+});
+test('glOrp@ucsd is not a valid email', () => {
+  expect(isEmail('glOrp@ucsd')).toBe(false);
+});
 
 /* isStrongPassword tests */
 test('wzOS_4FYsg is a strong password', () => {

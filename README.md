@@ -2,6 +2,9 @@
 
 Name: Sarah Balatbat
 
+- [expose page](https://sbalatbat.github.io/cse110_Lab5_Starter/expose.html)
+- [explore page](https://sbalatbat.github.io/cse110_Lab5_Starter/explore.html)
+
 ## Part 3. Unit Testing with Jest
 
 1) Would you use a unit test to test the “message” feature of a messaging application? Why or why not? For this question, assume the “message” feature allows a user to write and send a message to another user.
